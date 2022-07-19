@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import ItemDetail from "./ItemDetail";
 import data from "./utils/data";
 
@@ -9,7 +9,7 @@ const ItemDetailContainer = () => {
     });
 
     useEffect(() => {
-        promise.then((res) => setItems(data[0]));
+        promise.then((res) => setItems(data));
     }, []);
     return (
         <>
